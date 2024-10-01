@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // JavaScript to switch images
+        function turnOn() {
+            document.getElementById('myimage').src ="on.jpg";
+        
+        }
+        function turnOff() {
+            document.getElementById('myimage').src ="offLight.jpg";
+        
+        }
+        // javascript get full year methods
+        function getFullYear() {
+                document.getElementById("newDate").innerHTML = Date();
+        }
+        // silce method
+        function getSlice() {
+            const text = "Welcome to javascript code library.";
+            document.getElementById("slice").innerHTML = text.slice(7,26);
+        }
+        </script>
+        
+</head>
+<body>
+     <!-- JavaScript to switch images -->
+    <button onclick="turnOn()">Turn on the light</button>
+    <img id="myimage" src="offLight.jpg" width="200px" height="200px">        
+    <button onclick="turnOff()">Turn off the light</button>
+    <br>
+    <br>
+    <!-- javascript date events -->
+    <button onclick="getFullYear()">Current Date</button>
+    <p id="newDate"></p>
+    <!-- javascript slice methods -->
+    <button onclick="getSlice()">String slice</button>
+    <p id="slice"></p>
+
+</body>
+</html>
